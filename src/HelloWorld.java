@@ -91,6 +91,65 @@ public class HelloWorld {
         /*System.out.println((boolean) ); //boolean cnanot be casted for num*/
 
 
+        /* EXERCISE */
+        int myFavoriteNumber = 14;
+        System.out.println(myFavoriteNumber);
+
+        String myString = "\"High like the moon, rock with me baby\" - BTS";
+        System.out.println(myString);
+
+//        char
+
+//        myString = 3.14159;
+
+        //long myNumber;
+        //System.out.println(myNumber); //not assigned to anything
+
+        //long myNumber = 3.14;
+        //System.out.println(myNumber); //incompatible types
+
+        //long myNumber = 123L;
+        //System.out.println(myNumber); //123
+
+        long myNumber = 123;
+        System.out.println(myNumber); //123
+
+        float changingMyNumber = 3.14F;
+        myNumber = (int) changingMyNumber;
+        System.out.println(myNumber); // 3
+
+        //int x = 5;
+        //System.out.println(x++);
+        //System.out.println(x); // prints out 5 and 6
+
+        /*The problem's from above and below difference is the
+         *incrementation in the first sout. First one increments after,
+         *while the second one increments before. */
+
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x); // prints out 6 and 6
+
+        //var class; //cannot resolve
+
+        //String theNumberThree = "three";
+        //Object o = theNumberThree;
+        //int three = (int) o; //error
+
+        //int three = (int) "three"; //error
+
+//        int x = 4;
+//        x = x + 5;
+
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
 
     }
 }
