@@ -27,18 +27,20 @@ public class ConsoleExercises {
         System.out.printf(first + "%n" + second + "%n" + third + "%n");
 
 
-        System.out.print("Please enter a sentence...\n");
+        System.out.println("Please enter a sentence...\n");
         scanner.nextLine();
         String inputSentence = scanner.nextLine();
         System.out.print("Your sentence was: " + inputSentence);
 
 
-        System.out.print("\nWhat is the width of your Codeup classroom?\n");
-        int width = scanner.nextInt();
+        System.out.println("\nWhat is the width of your Codeup classroom?\n");
+        String width = scanner.nextLine();
+        int i = Integer.parseInt(width);
         System.out.print("What is the length of your Codeup classroom?\n");
-        int length = scanner.nextInt();
-        System.out.format("The area of the classroom is: %d\n", length * width);
-        System.out.format("The perimeter of the classroom is: %d\n", (length * 2) * (width * 2));
+        String length = scanner.nextLine();
+        int iTwo = Integer.parseInt(length);
+        System.out.printf("The area of the classroom is: %d\n", iTwo * i);
+        System.out.printf("The perimeter of the classroom is: %d\n", (iTwo * 2) * (i * 2));
 
 
 
