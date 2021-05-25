@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlow {
     public static void main(String[] args) {
 //        int x = 5;
@@ -52,19 +54,90 @@ public class ControlFlow {
 //            System.out.println("The programmer is a real being.");
 //        }
 
-        boolean existence = true;
-
-        if (existence) {
-            System.out.println("The programmer is a real being.");
-        }
+//        boolean existence = true;
+//
+//        if (existence) {
+//            System.out.println("The programmer is a real being.");
+//        }
 
         /* LOGICAL OPERATORS */
         // you can do && || &
 
-        int c = 0, d = 100, e = 50;
-
-        if (c == 1 && e++ < 100) {
+//        int c = 0, d = 100, e = 50;
+//
+//        if (c == 1 && e++ < 100) {
             //do anything
+//        }
+//        System.out.println("e = " + e); // doesn't increment ; stays at 50
+
+//        if (c == 0 && e++ < 100) {
+            //do anything
+//            d = 150;
+//        }
+//        System.out.println("e = " + e); // increments ; changes to 51
+
+        // non-short circuit operator
+//        if (c == 1 & e++ < 100) {
+            //do anything
+//        }
+//        System.out.println("e = " + e); // increments ; changes to 52
+
+       /* & will always test both conditions, && will only test both if the first executes as true */
+
+//        boolean existence = true;
+//        boolean solipsism = false;
+//        boolean weAllLiveInSomeoneElsesDream = false;
+//        boolean thisDeskIsRealNotAProjectionOfMyMind = true;
+//
+//        if (thisDeskIsRealNotAProjectionOfMyMind | weAllLiveInSomeoneElsesDream) {
+//            System.out.println("Common sense is victorious.");
+//        } else {
+//            System.out.println("I'm really confused now...");
+//        }
+//
+//        if (solipsism || weAllLiveInSomeoneElsesDream) {
+//            System.out.println("Common sense is victorious.");
+//        } else {
+//            System.out.println("I'm really confused now...");
+//        }
+
+        // comparison operator ==
+        // there is no strict equality operator
+        // inequality operator !=
+        // there is no strict inequality, don't use this: !==
+
+        //these get stored in the same place
+//        String myName = "Karen";
+//        String anotherKaren = "Karen";
+//
+//        String karen = new String("Karen");
+//
+//        System.out.println(myName == anotherKaren);
+//        System.out.println(myName == karen);
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What is your name?");
+//        String userInput = scanner.next();
+//        if (userInput == myName) {
+//            System.out.println("Hello, me");
+//        } else {
+//            System.out.println("You are not me.");
+//        }
+//        if (userInput.equals(myName)) {
+//            System.out.println("Hello, me");
+//        } else {
+//            System.out.println("You are not me.");
+//        }
+
+        /* LOOPS */
+
+        int i = 1;
+        while (i < 10) {
+            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
+            // i++ is shorthand for i = i + 1;
+            i++;
+            System.out.println("I'm still in the loop, but i has incremented now, and it's value is " + i);
         }
+        System.out.println("This is outside of the loop, after it has executed. The conditional has tested false. The value of i is now " + i);
     }
 }
