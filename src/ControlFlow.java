@@ -131,13 +131,29 @@ public class ControlFlow {
 
         /* LOOPS */
 
-        int i = 1;
-        while (i < 10) {
-            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
+//        int i = 1;
+//        while (i < 10) {
+//            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
             // i++ is shorthand for i = i + 1;
-            i++;
-            System.out.println("I'm still in the loop, but i has incremented now, and it's value is " + i);
+//            i++;
+//            System.out.println("I'm still in the loop, but i has incremented now, and it's value is " + i);
+//        }
+//        System.out.println("This is outside of the loop, after it has executed. The conditional has tested false. The value of i is now " + i);
+
+
+
+//        do {
+//            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
+            // i++ is shorthand for i = i + 1;
+//            i++;
+//            System.out.println("I'm still in the loop, but i has incremented now, and it's value is " + i);
+//        } while (i < 10);
+//        System.out.println("This is outside of the loop, after it has executed. The conditional has tested false. The value of i is now " + i); //runs one more time; goes up to 11 and then stops
+
+
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
         }
-        System.out.println("This is outside of the loop, after it has executed. The conditional has tested false. The value of i is now " + i);
     }
 }
