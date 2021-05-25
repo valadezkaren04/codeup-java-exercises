@@ -152,8 +152,34 @@ public class ControlFlow {
 
 
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("Now I'm in the loop. I have not incremented yet and its value is " + 1);
+//        }
+        // I can't access the variable i outside the loop code block
+//        System.out.println("This is outside the loop, after it has executed. The conditional has tested false. The value of i is now " + i);
+
+        // In a for loop, the increment is always the last thing that happens in the code block. It's automatic behavior. If I want to do anything after the increment, I must use a while-style loop
+
+        // group code 99 cans of big red
+
+        for (int i = 99; i >= 0; i--) {
+            String word = "cans";
+            if (i ==1) {
+                System.out.println(i + " can of Big Red on the Wall.");
+                System.out.println(i + " can of Big Red on the Wall,");
+                System.out.println(i + " can of Big Red,");
+                System.out.println("Take one down, pass it around, ");
+            } else if (i == 0 ){
+                System.out.println("No more cans of Big Red on the Wall,");
+                System.out.println("No more cans of Big Red,");
+                System.out.println("You go to the store, and buy some more,");
+                System.out.println("99 cans of Big Red on the wall");
+            } else {
+                System.out.println(i + " cans of Big Red on the Wall.");
+                System.out.println(i + " cans of Big Red on the Wall,");
+                System.out.println(i + " cans of Big Red,");
+                System.out.println("Take one down, pass it around, ");
+            }
         }
     }
 }
