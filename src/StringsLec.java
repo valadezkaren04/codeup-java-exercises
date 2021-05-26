@@ -33,6 +33,10 @@ public class StringsLec {
         hiDad = hiDad.replace(father, kn);
         System.out.println(hiDad); //Hello, Kim Namjoon
 
+        String hasWhiteSpace = "      a lot of white space";
+        System.out.println(hasWhiteSpace.trim()); //a lot of white space (no w.s)
+        System.out.println(hasWhiteSpace); //      a lot of white space (with w.s)
+
 
         //Rabbit Hole (works!)
         String makeMeWork = "\"%s\" totally works in a souf";
