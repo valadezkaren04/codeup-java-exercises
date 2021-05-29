@@ -45,7 +45,7 @@ public class MethodsExercises {
 //        Scanner scanner = new Scanner(System.in);
 //        scanner.nextLine();
 //        System.out.printf("Your integer was: %d", num);
-
+//finish exercises on monday
     }
 
     public static void main(String[] args) {
