@@ -46,6 +46,8 @@ public class MethodsExercises {
 //        scanner.nextLine();
 //        System.out.printf("Your integer was: %d", num);
 //finish exercises on monday
+        //as well as the bonuses
+        //work on mini project!
     }
 
     public static void main(String[] args) {
