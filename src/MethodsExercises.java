@@ -35,7 +35,18 @@ public class MethodsExercises {
             return getInteger(min, max);
         } else {
             System.out.printf("Thank you for following directions! Your number was %d!%n", userNumber);
+            return userNumber;
+        }
+    }
 
+    //3
+    public static int factorialNum(int num) {
+//        System.out.println("Please enter an integer between 1 and 10: ");
+//        Scanner scanner = new Scanner(System.in);
+//        scanner.nextLine();
+//        System.out.printf("Your integer was: %d", num);
+
+    }
 
     public static void main(String[] args) {
 
