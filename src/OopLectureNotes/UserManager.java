@@ -1,6 +1,9 @@
 package OopLectureNotes;
 import java.util.Scanner;
 
+// We will be using this class to separate out the logic and run our methods in our UserTools.java
+// aka our main access point into the application.
+
 public class UserManager {
     public static Scanner scanner = new Scanner(System.in);
 
