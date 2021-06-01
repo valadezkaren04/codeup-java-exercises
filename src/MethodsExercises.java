@@ -44,19 +44,50 @@ public class MethodsExercises {
     }
 
     //3
-//    public static int factorialNum(int num) {
-//        System.out.println("Please enter an integer between 1 and 10: ");
-//        Scanner scanner = new Scanner(System.in);
-//        scanner.nextLine();
-//        System.out.printf("Your integer was: %d", num);
-//finish exercises on monday
-        //as well as the bonuses
-        //work on mini project!
-//    }
+    public static String factorial(long num) {
+        long factorial = 1L;
+        String result = " = ";
+        for (long i = 1L; i <=num; i++) {
+            factorial *= i;
+            if (i == num) {
+                result += i;
+            } else {
+                result += i + " x ";
+            }
+        }
+        return factorial + result;
+    }
 
     //4
+    public static void diceRoll(int sides, int numberOfDice) {
+        for (int i = 1; i <= numberOfDice; i++) {
+            int result = (int) Math.floor(Math.random() * ((sides - 1) + 1) + 1);
+            System.out.println(result);
+        }
+    }
 
-    //5
+    public static void diceRoll() {
+        boolean keepGoing = true;
+        while (keepGoing) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("How many sides is the die?");
+            int sides = sc.nextInt();
+            System.out.println("How many die are you wanting to roll?");
+            int numDice = sc.nextInt();
+            diceRoll(sides, numDice);
+            sc.nextLine();
+            String answer = " ";
+            while (!answer.equalsIgnoreCase("Yes") && !answer.equalsIgnoreCase("No")) {
+                System.out.println("Keep playing? [Yes/No]");
+                answer = sc.nextLine();
+            }
+            if (answer.equalsIgnoreCase("No")) {
+                System.out.println("Thanks for playing!");
+                keepGoing = false;
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
 
