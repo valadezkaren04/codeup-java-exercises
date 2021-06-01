@@ -44,7 +44,7 @@ public class MethodsExercises {
     }
 
     //3
-    public static int factorialNum(int num) {
+//    public static int factorialNum(int num) {
 //        System.out.println("Please enter an integer between 1 and 10: ");
 //        Scanner scanner = new Scanner(System.in);
 //        scanner.nextLine();
@@ -52,7 +52,11 @@ public class MethodsExercises {
 //finish exercises on monday
         //as well as the bonuses
         //work on mini project!
-    }
+//    }
+
+    //4
+
+    //5
 
     public static void main(String[] args) {
 
