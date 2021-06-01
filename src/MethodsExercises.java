@@ -19,6 +19,10 @@ public class MethodsExercises {
         return num1 / num2;
     }
 
+    public static int moduleIt(int num1, int num2) {
+        return num1 % num2;
+    }
+
     // BONUS
     /* Create your multiplication method without the * operator
      * (Hint: a loop might be helpful).
@@ -56,6 +60,7 @@ public class MethodsExercises {
         System.out.println(subtractIt(100, 50));
         System.out.println(multiplyIt(21, 50));
         System.out.println(devideIt(2000, 50));
+        System.out.println(moduleIt(500, 40));
 
         System.out.println(getInteger(1, 20));
 
