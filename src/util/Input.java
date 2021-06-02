@@ -7,7 +7,7 @@ public class Input {
     private Scanner scanner;
 
     public Input (){
-        this.scanner = new Scanner(System.in); //created a constructor.
+        this.scanner = new Scanner(System.in); //created a constructor (special method that is called when an object is created)
 
     }
 
@@ -20,7 +20,7 @@ public class Input {
     public boolean YesNo(){
         System.out.println("Yes or No?");
         String input = scanner.nextLine();
-        if(input.equalsIgnoreCase("yes")||input.equalsIgnoreCase("y")){
+        if (input.equalsIgnoreCase("yes")||input.equalsIgnoreCase("y")){
             return true;
         } else {
             return false;
@@ -28,6 +28,9 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
+        System.out.println("Please enter an integer between 1-20: ");
+        String input = scanner.nextLine();
+        if ()
 
     }
 

@@ -17,14 +17,18 @@ public class Person {
         System.out.println("Hello, " + name);
     }
 
+/* The class should have a constructor that accepts a `String` value and sets
+ * the person's name to the passed string. */
     public Person(String name){
         this.name = name;
     }
 
     public Person(){}
 
+/* Create a `main` method on the class that creates a new `Person` object and
+ * tests the above methods. */
     public static void main(String[] args) {
-        Person p1Test = new Person("karen");
+        Person p1Test = new Person("karen"); // testing constructor
         System.out.println(p1Test.getName()); // karen
         p1Test.setName("Jimin"); // changes name to Jimin
         System.out.println("My new name is: " + p1Test.getName()); //My new name is: Jimin
