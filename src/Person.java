@@ -39,20 +39,20 @@ public class Person {
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
 //        System.out.println(person1.getName().equals(person2.getName())); //true ; uses the equals method which allows it to compare string values.
-//        System.out.println(person1 == person2); // false ; can't compare two string within objcts
+//        System.out.println(person1 == person2); // false ; can't compare two string within objects
 
 //        Person person1 = new Person("John");
-//        Person person2 = person1;
+//        Person person2 = person1; // creates a copy of it...ex: catfishing, "Like if I was cat fishing somebody, me person1 is pretending to be person2, but I’m really person1 too." -Bianca's example
 //        System.out.println(person1 == person2); // true ; the comparison is made on objects that are the exact same
 
 
         Person person1 = new Person("John");
-        Person person2 = person1;
+        Person person2 = person1; //person 2 is person 1
         System.out.println(person1.getName()); // John
         System.out.println(person2.getName()); // John ; person 2 is equal to person 1
         person2.setName("Jane");
         System.out.println(person1.getName()); // Jane
-        System.out.println(person2.getName()); // Jane ; changing the name also impacts person 1's name
+        System.out.println(person2.getName()); // Jane ; changing the name also impacts person 1's name (same object)
     }
 }
 
