@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 public class ArrayLecNotes {
     public static void main(String[] args) {
