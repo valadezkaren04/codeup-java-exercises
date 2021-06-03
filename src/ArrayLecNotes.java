@@ -1,23 +1,25 @@
 import java.util.Arrays;
 public class ArrayLecNotes {
     public static void main(String[] args) {
-      /** must dictate data type. all elements contained in this way
-       * are going to be this specific data type. Has to be same data type */
-        int[] numbers = {14, 64, 34, 44};
+
+        int[] numbers = {14, 64, 34, 44}; /** must dictate data type. all elements contained in this way
+         ** are going to be this specific data type. Has to be same data type */
         System.out.println(numbers); //prints location of array in memory - not human readable.
-//  One way to print out the numbers, can iterate through it with for loop.
-        for(int i = 0; i < numbers.length; i++){
+
+        for(int i = 0; i < numbers.length; i++){ // One way to print out the numbers, can iterate through it with for loop.
             System.out.println(numbers[i]);
         }
-//        Enhanced for loop (like for each loop in js)
+
+        /*--- Enhanced for loop ---*/
         for(int number : numbers){
             System.out.println(number);
         }
-//        Arrays different from js. Length in java is defined. Js has push/pull to add to array; arrays are static in Java.
-//        Can change number at a specific index
-        numbers[1] = 33;
-//        Cannot change the length of the array. It will throw an exception.
-//        numbers[4] = 15;
+
+        /**Arrays different from js. Length in java is defined.
+         * Js has push/pull to add to array; arrays are static in Java. */
+
+        numbers[1] = 33; // Can change number at a specific index
+        //numbers[4] = 15; // Cannot change the length of the array. It will throw an exception.
 //        enter how long you want array to be. We could set array to be a longer length, but if nothing added at that index it will return null. Dealing with reference data type; dealing with objects.
         String[] topFiveBoyNames = new String[5];
         topFiveBoyNames[0] = "Greg";
