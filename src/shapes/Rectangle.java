@@ -23,6 +23,11 @@ public class Rectangle {
         this.width = width;
     }
 
+    // default constructor
+    public Rectangle() {
+
+    }
+
     //Rectangle should define a constructor that accepts two numbers for length and width, and sets
     //those properties ; constructor
     public Rectangle(double length, double width) {
@@ -35,7 +40,7 @@ public class Rectangle {
     }
 
     public double getPerimeter() {
-        return (2 * this.getLength() *  (2 * this.getWidth()));
+        return (2 * this.getLength() + (2 * this.getWidth()));
     }
 
 
