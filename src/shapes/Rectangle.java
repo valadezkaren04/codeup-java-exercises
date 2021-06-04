@@ -34,5 +34,9 @@ public class Rectangle {
         return this.getLength() * this.getWidth();
     }
 
+    public double getPerimeter() {
+        return (2 * this.getLength() *  (2 * this.getWidth()));
+    }
+
 
 }
