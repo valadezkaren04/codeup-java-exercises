@@ -11,4 +11,9 @@ public class Finch extends Bird{
         System.out.println("A Finch just got created");
     }
 
+    public Finch(String name, boolean canItFly) {
+        this.setName(name);
+        this.setCanFly(canItFly);
+    }
+
 }
