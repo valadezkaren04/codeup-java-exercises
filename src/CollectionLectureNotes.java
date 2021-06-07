@@ -1,4 +1,7 @@
+import shapes.Square;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class CollectionLectureNotes {
     public static void main(String[] args) {
@@ -9,6 +12,11 @@ public class CollectionLectureNotes {
         collectionofNums.add(24);
 
         collectionofNums.add(1, 14); //doesn't replace but pushes it down: 16 14 44 24
+
+        /*---replace in collection---*/
+        System.out.println(collectionofNums); // [16, 14, 24]
+        collectionofNums.set(2, 88);
+        System.out.println(collectionofNums); // [16, 14, 88]
 
         /*---get length of collection---*/
         for (int i = 0; i < collectionofNums.size(); i++) { // uses the size method
@@ -51,7 +59,7 @@ public class CollectionLectureNotes {
         System.out.println(collectionOfDoubles); // [3.14, 56.0, 7.777777]
 
 
-        /*---**********---*/
+        /*---****IGNORE******---*/
 //        ArrayList stuff = new ArrayList();
 //        stuff.add("Beatrice");
 //        stuff.add(13);
@@ -60,6 +68,37 @@ public class CollectionLectureNotes {
 //        for (Object thing : stuff) {
 //            System.out.println(thing);
 //        } // Beatrice 13
-    }
+        /*---***************---*/
 
+        System.out.println("------***------");
+
+        HashMap<Character, Square> squares = new HashMap<>(); // Character is built into Java
+        squares.put('A', new Square(5));
+        squares.put('B', new Square(10)); // added after getting 0.0 to get back 100.0 for the sout
+        Square sq = new Square(3);
+        squares.put('D', sq);
+        squares.putIfAbsent('D', new Square(9));
+        squares.putIfAbsent('Q', sq);
+        System.out.println(squares.get('A').getArea()); // 25.0
+//        System.out.println(squares.get('C').getArea());
+        System.out.println(squares.getOrDefault('B', new Square(0)).getArea());// 0.0 ; don't get back a # value ; there is no square with the value of B
+        System.out.println(squares.containsKey('B')); //true
+        System.out.println(squares.containsValue(new Square(5))); //false b.c they are not the same
+        System.out.println(squares.containsValue(sq)); // true
+        System.out.println(sq);
+        System.out.println(squares.get('Q'));
+        squares.remove('Q');
+        System.out.println(squares.get('Q'));
+        squares.remove('C', sq);
+        System.out.println(squares.containsValue(sq));
+        squares.replace('D', new Square(4));
+        System.out.println(sq.getArea());
+        System.out.println(squares.get('D').getArea());
+        squares.replace('E', new Square(15));
+//        System.out.println(squares.get('E').getArea());
+        squares.clear();
+        System.out.println(squares.size());
+        System.out.println(squares.isEmpty());
+    }
 }
+

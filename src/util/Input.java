@@ -55,8 +55,12 @@ public class Input {
         }
     }
 
-    public double getDouble() {
+    public double getDouble(String s) {
         return this.scanner.nextInt();
+    }
+
+    public boolean yesNo(String s) {
+        return false;
     }
 
 
