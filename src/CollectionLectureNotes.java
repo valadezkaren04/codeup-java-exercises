@@ -31,7 +31,7 @@ public class CollectionLectureNotes {
         System.out.println(numbers); // unreadable code; memory // [I@5acf9800
         System.out.println(collectionofNums); //already has a .toString() method included// [16, 14, 44, 24]
 
-        System.out.println(collectionofNums.contains(44)); // to see if element mataches/exists inside a collection, gets back a boolean// true
+        System.out.println(collectionofNums.contains(44)); // to see if element matches // exists inside a collection, gets back a boolean// true
         System.out.println(collectionofNums.indexOf(44)); // 2nd index
         System.out.println(collectionofNums.lastIndexOf(44)); // 2 again because it is the last 44
 
@@ -85,20 +85,20 @@ public class CollectionLectureNotes {
         System.out.println(squares.containsKey('B')); //true
         System.out.println(squares.containsValue(new Square(5))); //false b.c they are not the same
         System.out.println(squares.containsValue(sq)); // true
-        System.out.println(sq);
+        System.out.println(sq); // shapes.Square@24d46ca6
         System.out.println(squares.get('Q'));
-        squares.remove('Q');
+        squares.remove('Q'); // shapes.Square@24d46ca6
         System.out.println(squares.get('Q'));
-        squares.remove('C', sq);
-        System.out.println(squares.containsValue(sq));
+        squares.remove('C', sq); // null
+        System.out.println(squares.containsValue(sq)); // true
         squares.replace('D', new Square(4));
         System.out.println(sq.getArea());
         System.out.println(squares.get('D').getArea());
         squares.replace('E', new Square(15));
 //        System.out.println(squares.get('E').getArea());
         squares.clear();
-        System.out.println(squares.size());
-        System.out.println(squares.isEmpty());
+        System.out.println(squares.size()); // 0
+        System.out.println(squares.isEmpty()); // true
     }
 }
 

@@ -12,6 +12,6 @@ public class InputTest {
         System.out.println(in.getInt()); // int getInt()
 
         System.out.println(in.getDouble(1, 4)); // double getDouble(double min, double max)
-        System.out.println(in.getDouble()); // double getDouble()
+        System.out.println(in.getDouble(1, 2)); // double getDouble()
     }
 }
