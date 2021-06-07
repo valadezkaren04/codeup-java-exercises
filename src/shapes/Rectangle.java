@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle {
+//public class Rectangle {
 
 //    //it should have protected properties for both length and width.
 //    protected double length;
