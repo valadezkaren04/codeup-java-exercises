@@ -27,9 +27,39 @@ public class CollectionLectureNotes {
         System.out.println(collectionofNums.indexOf(44)); // 2nd index
         System.out.println(collectionofNums.lastIndexOf(44)); // 2 again because it is the last 44
 
+        /*---empty array---*/
         ArrayList<String> studentNames = new ArrayList<>();
         if (studentNames.isEmpty()) {
             System.out.println("Let's fill in the name of Student names"); // Let's fill in the name of Student names
         }
+        studentNames.remove("Beatrice"); // if array was not empty, it would remove Beatrice
+        boolean resultRemove = studentNames.remove("Beatrice");
+        System.out.println(resultRemove);//if done with a boolean it shows whether it was removed or not // false because it is an empty array. therefore the naem does not exist
+        /*---**********---*/
+
+        collectionofNums.remove((Integer) 44);
+        System.out.println(collectionofNums); // it does remove 44 // [16, 14, 24]
+
+        ArrayList<Double> collectionOfDoubles = new ArrayList<>();
+        collectionOfDoubles.add(3.14);
+        collectionOfDoubles.add(56.0);
+        collectionOfDoubles.add(7.777777);
+        collectionOfDoubles.add((double) 2);
+
+        System.out.println(collectionOfDoubles); // [3.14, 56.0, 7.777777, 2.0]
+        collectionOfDoubles.remove(2.0);
+        System.out.println(collectionOfDoubles); // [3.14, 56.0, 7.777777]
+
+
+        /*---**********---*/
+//        ArrayList stuff = new ArrayList();
+//        stuff.add("Beatrice");
+//        stuff.add(13);
+//        stuff.add(new Square(5));
+//
+//        for (Object thing : stuff) {
+//            System.out.println(thing);
+//        } // Beatrice 13
     }
+
 }
