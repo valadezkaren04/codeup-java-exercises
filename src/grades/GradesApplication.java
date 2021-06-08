@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class GradesApplication {
-    public static void getStudentInfo(ArrayList<String> list, HashMap <String, Student> students){
+    public static String getStudentInfo(ArrayList<String> list, HashMap <String, Student> students){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What student would you like to see more information on?");
@@ -18,16 +18,17 @@ public class GradesApplication {
                 getStudentInfo(list, students);
             }
         } else {
-            System.out.println("Name: " + students.get(studentInput).getName() + "- " + "Github Username: " + studentInput);
+            System.out.println("Name: " + students.get(studentInput).getName() + " - " + "Github Username: " + studentInput);
             System.out.println("Current Average: " + students.get(studentInput).getGradeAverage());
-        }
         System.out.println("Would you like to see another student? (Y/N)");
         String userContinue = scanner.nextLine();
-        if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")){
+        if (userContinue.equalsIgnoreCase("yes") || userContinue.equalsIgnoreCase("y")) {
             getStudentInfo(list, students);
         } else {
-            System.out.print("Thank you, have a good day!");
+            System.out.print("Thank you, have a good day! n.n");
+            }
         }
+        return studentInput;
     }
 
     public static void main(String[] args) {
