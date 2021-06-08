@@ -25,6 +25,7 @@ public class Student {
     public void addGrade(int grade){
         this.grades.add(grade);
     }
+
     // returns the average of the students grades
     public double getGradeAverage(){
         double total = 0;
