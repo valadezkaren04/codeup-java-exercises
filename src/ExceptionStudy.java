@@ -51,13 +51,4 @@ public class ExceptionStudy {
 //        }
 //        System.out.println(userInput);
 //    }
-public void echoWordCustomEx() throws CusswordException {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("I am a parrot. Please say something and I will parrot you.");
-    String userInput = scanner.nextLine();
-    if (userInput.equals("curses")) {
-        throw new CusswordException("How dare you? We don't allow that sort of language here?");
-    }
-    System.out.println(userInput);
-}
 }

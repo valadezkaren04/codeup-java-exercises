@@ -27,7 +27,7 @@ public class Input {
         }
     }
 
-    public int getInt() {
+    public int getInt(int i, int i1) {
         return this.scanner.nextInt();
     }
 
@@ -44,17 +44,16 @@ public class Input {
 //    }
 
     // Exception exercise
-    public int getInt(int min, int max) {
-        System.out.printf("Please enter an integer between %d and %d", min, max);
-        int userNum = this.scanner.nextInt();
-
-        if (userNum >= min && userNum <= max) {
-            return userNum;
-        } else {
-            System.out.println("That number is not between the max and min");
-            return getInt(min, max);
+    public int getInt(){
+        try {
+            return Integer.parseInt(getString("Please enter an interger"));
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt();
         }
     }
+
+
 
 //    public double getDouble(double min, double max) {
 //        System.out.printf("Give me a decimal between %f and %f", min, max);
