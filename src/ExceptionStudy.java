@@ -28,17 +28,17 @@ public class ExceptionStudy {
         System.out.println("please enter an integer...");
         String userInput = scanner.nextLine();
         try {
-//            //userInput = null // npe
-//            int userInputInteger = Integer.parseInt(userInput, 10, 15, 10);
-//            System.out.println("Thank you for entering: " + userInputInteger);
-//        } catch (NumberFormatException nfe){
-//            System.out.println("No integer between characters 10 and 15");
-//        } catch (IndexOutOfBoundsException iobe) {
-//            System.out.println("Your string wasn't long enough");
-//        } catch (NullPointerException npe) {
-//            System.out.println("You literally didn't hear anything");
-//        } finally {
-//            System.out.println("Thank you for visiting our application.");
-//        }
-//    }
-//}
+            //userInput = null // npe
+            int userInputInteger = Integer.parseInt(userInput, 10, 15, 10);
+            System.out.println("Thank you for entering: " + userInputInteger);
+        } catch (NumberFormatException nfe){
+            System.out.println("No integer between characters 10 and 15");
+        } catch (IndexOutOfBoundsException iobe) {
+            System.out.println("Your string wasn't long enough");
+        } catch (NullPointerException npe) {
+            System.out.println("You literally didn't hear anything");
+        } finally {
+            System.out.println("Thank you for visiting our application.");
+        }
+    }
+}
