@@ -31,6 +31,19 @@ public class Input {
         return this.scanner.nextInt();
     }
 
+//    public int getInt(int min, int max) {
+//        System.out.printf("Please enter an integer between %d and %d", min, max);
+//        int userNum = this.scanner.nextInt();
+//
+//        if (userNum >= min && userNum <= max) {
+//            return userNum;
+//        } else {
+//            System.out.println("That number is not between the max and min");
+//            return getInt(min, max);
+//        }
+//    }
+
+    // Exception exercise
     public int getInt(int min, int max) {
         System.out.printf("Please enter an integer between %d and %d", min, max);
         int userNum = this.scanner.nextInt();
@@ -43,6 +56,19 @@ public class Input {
         }
     }
 
+//    public double getDouble(double min, double max) {
+//        System.out.printf("Give me a decimal between %f and %f", min, max);
+//        double userNum = this.scanner.nextDouble();
+//
+//        if (userNum >= min && userNum <= max) {
+//            return userNum;
+//        } else {
+//            System.out.println("That decimal number is not between the max and min");
+//            return getDouble(min, max);
+//        }
+//    }
+
+    // Exception exercise
     public double getDouble(double min, double max) {
         System.out.printf("Give me a decimal between %f and %f", min, max);
         double userNum = this.scanner.nextDouble();
