@@ -19,15 +19,15 @@ public class ExceptionStudy {
         }
     }
 
-//    // series of catches
-//    /**make sure you put more specific exceptions catches ABOVE more general exception catches
-//     * in your code or you will get thee already caught exception.
-//     */
-//    public void moreComplexInt() {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("please enter an integer...");
-//        String userInput = scanner.nextLine();
-//        try {
+    // series of catches
+    /**make sure you put more specific exceptions catches ABOVE more general exception catches
+     * in your code or you will get thee already caught exception.
+     */
+    public void moreComplexInt() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter an integer...");
+        String userInput = scanner.nextLine();
+        try {
 //            //userInput = null // npe
 //            int userInputInteger = Integer.parseInt(userInput, 10, 15, 10);
 //            System.out.println("Thank you for entering: " + userInputInteger);
