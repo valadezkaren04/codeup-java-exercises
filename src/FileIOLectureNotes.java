@@ -7,6 +7,7 @@ import java.nio.file.*;
 // * = wild card - everything in the file
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class FileIOLectureNotes {
@@ -134,9 +135,27 @@ public class FileIOLectureNotes {
 
         io.readFileAndOutput(toOurDataFile);
 
-        //
+        // Iterate over a list and remove one item
 
+        List<String> currentList = new ArrayList<>();
+        try {
+            currentList = Files.readAllLines(toOurDataFile);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        Iterator<String> listIterator = currentList.iterator();
+        while(listIterator.hasNext()) {
+            String empress = listIterator.next();
+            if (empress.equals("Messaline")) {
+                listIterator.remove();
+            }
+        }
+        try {
+            Files.write(toOurDataFile, currentList);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
 
-
+        io.readFileAndOutput(toOurDataFile);
     }
 }
