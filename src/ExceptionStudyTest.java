@@ -24,12 +24,7 @@ public class ExceptionStudyTest {
         // runs the method
         study.moreComplexInt();
 
-        try {
-            study.echoWordCustomEx();
-        } catch (CusswordException ce){
-            System.out.println("How rude! >.<");
-            System.out.println(ce.getMessage());
-        }
+        study.echoWordCustomEx();
 
     }
 }

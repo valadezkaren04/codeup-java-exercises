@@ -42,6 +42,9 @@ public class ExceptionStudy {
         }
     }
 
+    public void echoWordCustomEx() {
+    }
+
 //     public void echoWord() throws IllegalArgumentException {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("I am a parrot. Please say something and I will parrot you.");

@@ -14,6 +14,10 @@ public class InputTest {
 //        System.out.println(in.getDouble(1, 4)); // double getDouble(double min, double max)
 //        System.out.println(in.getDouble(1, 2)); // double getDouble()
 
-        System.out.println(in.getInt(14, 24));
+        // Exception exercise
+        int userInput = in.getInt("Enter an integer: ");
+        System.out.println("User input: " + userInput);
+
+
     }
 }
