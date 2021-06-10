@@ -1,3 +1,5 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.io.IOException;
 // IO : Input output ^^ old way
 import java.nio.file.*;
@@ -8,6 +10,20 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FileIOLectureNotes {
+
+    public void readFileAndOutput (Path pathToFile) {
+        List<String> currentList = new ArrayList<>();
+        try {
+            currentList = Files.readAllLines(pathToFile);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        for (String line : currentList) {
+            System.out.println(line);
+        }
+    }
+
+    // main method = runs code
     public static void main(String[] args) {
         //path obj represents a file on the system
         // this constructs a java representation of it (using Path)
@@ -52,10 +68,36 @@ public class FileIOLectureNotes {
         List<String> romanEmpresses = Arrays.asList("Livia", "Agrippina", "Messalina", "Julia Domna");
 
         try {
+            // 2 arguments for Files.write
+            // The path to our file, the data we want to write
             Files.write(toOurDataFile, romanEmpresses);
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
+
+        // Read from a file
+
+        // create a place to put information we read from the file
+//        List<String> currentList = new ArrayList<>();
+//
+//        // read the information from the file
+//        try {
+//            currentList = Files.readAllLines(toOurDataFile);
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
+//
+//        // loop through the ArrayList and output each item
+//        for (String line : currentList) {
+//            System.out.println(line); // Livia Agrippina Messalina Julia Domna
+//        }
+
+        // commented ^Read from a file^ out due to putting it in a method
+
+        //
+
+        FileIOLectureNotes io = new FileIOLectureNotes(); // creating a new FileIOLec..
+        io.readFileAndOutput(toOurDataFile); // instantiation
 
 
 
