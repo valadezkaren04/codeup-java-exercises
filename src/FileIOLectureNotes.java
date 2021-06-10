@@ -99,6 +99,43 @@ public class FileIOLectureNotes {
         FileIOLectureNotes io = new FileIOLectureNotes(); // creating a new FileIOLec..
         io.readFileAndOutput(toOurDataFile); // instantiation
 
+        /**Can someone explain what the difference between a static and non static method is?
+         Do static methods allow you to call them without creating an object first while non
+         static method require an object to be made?
+
+         Static methods are generalized methods that are independent of object instantiation.
+         * You have to refer to the class name like we saw
+         * Javier demo (“FileIOLection.readFileAndOutput()”).
+         * Non-static methods (Instance Methods) are methods that can be accessed once
+         * an object has been instantiated from the class using the “new” keyword.*/
+
+        // Append a single item to our list
+
+        try {
+            Files.writeString(toOurDataFile, "Julia Maesa\n", StandardOpenOption.APPEND);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        io.readFileAndOutput(toOurDataFile);
+
+        // Append a list to a list
+
+        List<String> lateRomanEmpresses = new ArrayList<>();
+        lateRomanEmpresses.add("Galla Placidia");
+        lateRomanEmpresses.add("Theodara");
+        lateRomanEmpresses.add("Licinia Eudoxia");
+
+        try {
+            Files.write(toOurDataFile, lateRomanEmpresses, StandardOpenOption.APPEND);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        io.readFileAndOutput(toOurDataFile);
+
+        //
+
 
 
     }
