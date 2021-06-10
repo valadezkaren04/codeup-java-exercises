@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.nio.file.*;
 // series of method that has to do with input and output in the new io
 // * = wild card - everything in the file
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -52,7 +53,9 @@ public class FileIOLectureNotes {
 
         try {
             Files.write(toOurDataFile, romanEmpresses);
-        } catch (IO)
+        } catch (IOException ioe){
+            ioe.printStackTrace();
+        }
 
 
 
