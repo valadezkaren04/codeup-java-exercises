@@ -16,7 +16,9 @@ public class GroceryAppTest extends Input {
             System.out.printf("%d: %s%n", num, section);
             num++;
         }
-        String selectSection
+        String selectSection = "";
+        while (!list.containsKey(selectSection))
+            selectSection
     }
 
     public static void printList(HashMap<String, ArrayList<Groceries>> list) {
