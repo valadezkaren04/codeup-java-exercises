@@ -106,7 +106,7 @@ public class FileIOLectureNotes {
 
          Static methods are generalized methods that are independent of object instantiation.
          * You have to refer to the class name like we saw
-         * Javier demo (“FileIOLection.readFileAndOutput()”).
+         * Javier demo (“FileIOLecture.readFileAndOutput()”).
          * Non-static methods (Instance Methods) are methods that can be accessed once
          * an object has been instantiated from the class using the “new” keyword.*/
 
