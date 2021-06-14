@@ -3,23 +3,23 @@ package GroceryApp;
 import util.Input;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-public class GroceryAppTest extends Input {
-
-    public static void addToList(HashMap<String, ArrayList<Groceries>> list, Input in) {
-        System.out.println("Please select a section: ");
-        int num = 1;
-        for (String section : list.keySet()) {
-            System.out.printf("%d: %s%n", num, section);
-            num++;
-        }
-        String selectSection = "";
-        while (!list.containsKey(selectSection))
-            selectSection
-    }
+//import java.util.ArrayList;
+//import java.util.HashMap;
+//import java.util.Map;
+//
+//public class GroceryAppTest extends Input {
+//
+//    public static void addToList(HashMap<String, ArrayList<Groceries>> list, Input in) {
+//        System.out.println("Please select a section: ");
+//        int num = 1;
+//        for (String section : list.keySet()) {
+//            System.out.printf("%d: %s%n", num, section);
+//            num++;
+//        }
+//        String selectSection = "";
+//        while (!list.containsKey(selectSection))
+//            selectSection
+//    }
 //
 //    public static void printList(HashMap<String, ArrayList<Groceries>> list) {
 //        System.out.println("Your list: \n");
