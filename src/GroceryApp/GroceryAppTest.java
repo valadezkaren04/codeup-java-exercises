@@ -54,27 +54,27 @@ public class GroceryAppTest extends Input {
             System.out.println("2. View list");
             System.out.println("3. Exit");
 
-            int userInput = in.getInt("Please enter: 1, 2, or 3", 1, 3);
-            in.getString();
-
-            switch (userInput) {
-                case 1:
-                    addToList(list, in);
-                    System.out.println("Returning to the menu...\n");
-                    break;
-                case 2:
-                    printList(list);
-                    System.out.println("Returning to the menu...\n");
-                    break;
-                case 3:
-                    System.out.println("Are you sure you want to exit?");
-                    if (in.yesNo()) {
-                        System.out.println("Thank you for choosing BT21! Come again soon n.n");
-                        run = false;
-                    } else {
-                        System.out.println("Returning to the menu...\n");
-                    }
-            }
-        }
-    }
-}
+//            int userInput = in.getInt("Please enter: 1, 2, or 3", 1, 3);
+//            in.getString();
+//
+//            switch (userInput) {
+//                case 1:
+//                    addToList(list, in);
+//                    System.out.println("Returning to the menu...\n");
+//                    break;
+//                case 2:
+//                    printList(list);
+//                    System.out.println("Returning to the menu...\n");
+//                    break;
+//                case 3:
+//                    System.out.println("Are you sure you want to exit?");
+//                    if (in.yesNo()) {
+//                        System.out.println("Thank you for choosing BT21! Come again soon n.n");
+//                        run = false;
+//                    } else {
+//                        System.out.println("Returning to the menu...\n");
+//                    }
+//            }
+//        }
+//    }
+//}
