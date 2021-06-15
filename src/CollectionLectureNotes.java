@@ -61,9 +61,7 @@ public class CollectionLectureNotes {
 
         /*---****IGNORE******---*/
         ArrayList stuff = new ArrayList();
-        stuff.add("Beatrice");
-        stuff.add(13);
-        stuff.add(new Square(5));
+
 
         for (Object thing : stuff) {
             System.out.println(thing);
