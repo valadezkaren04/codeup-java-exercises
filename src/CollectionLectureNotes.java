@@ -91,7 +91,14 @@ public class CollectionLectureNotes {
         System.out.println(squares.get('Q'));
         squares.remove('C', sq); // null
         System.out.println(squares.containsValue(sq)); // true
-         // true
+        squares.replace('D', new Square(4));
+        System.out.println(sq.getArea());
+        System.out.println(squares.get('D').getArea());
+        squares.replace('E', new Square(15));
+//        System.out.println(squares.get('E').getArea());
+        squares.clear();
+        System.out.println(squares.size()); // 0
+        System.out.println(squares.isEmpty()); // true
     }
 }
 
