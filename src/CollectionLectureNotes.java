@@ -70,16 +70,7 @@ public class CollectionLectureNotes {
 //       } // Beatrice 13
         /*---***************---*/
 
-        System.out.println("------***------");
-
-        HashMap<Character, Square> squares = new HashMap<>(); // Character is built into Java
-        squares.put('A', new Square(5));
-        squares.put('B', new Square(10)); // added after getting 0.0 to get back 100.0 for the sout
-        Square sq = new Square(3);
-        squares.put('D', sq);
-        squares.putIfAbsent('D', new Square(9));
-        squares.putIfAbsent('Q', sq);
-        System.out.println(squares.get('A').getArea()); // 25.0
+         // 25.0
 //        System.out.println(squares.get('C').getArea());
         System.out.println(squares.getOrDefault('B', new Square(0)).getArea());// 0.0 ; don't get back a # value ; there is no square with the value of B
         System.out.println(squares.containsKey('B')); //true
