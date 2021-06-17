@@ -55,7 +55,15 @@ public class FileIOLectureNotes {
             ioe.printStackTrace();
         }
 
+        Path toOurDataFile = Paths.get(String.valueOf(toOurDataPlace));
 
+        try {
+            if (Files.notExists(toOurDataFile)) {
+                Files.createFile(toOurDataFile);
+            }
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
 
         // Write to a file
         List<String> romanEmpresses = Arrays.asList("Livia", "Agrippina", "Messalina", "Julia Domna");
