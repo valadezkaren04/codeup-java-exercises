@@ -112,13 +112,6 @@ public class FileIOLectureNotes {
 
         // Append a single item to our list
 
-        try {
-            Files.writeString(toOurDataFile, "Julia Maesa\n", StandardOpenOption.APPEND);
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
-
-        io.readFileAndOutput(toOurDataFile);
 
         // Append a list to a list
 
