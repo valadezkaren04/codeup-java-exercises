@@ -10,14 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class FileIOLectureNotes {
 
-    public void readFileAndOutput (Path pathToFile) {
-        List<String> currentList = new ArrayList<>();
-        try {
-            currentList = Files.readAllLines(pathToFile);
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
         }
         for (String line : currentList) {
             System.out.println(line);
