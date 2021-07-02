@@ -32,7 +32,17 @@ import java.util.Scanner;
             }
         }
 
-
+        public static void littleGame(int min, int max, int tries) {
+            Scanner sc = new Scanner(System.in);
+            int answer = magicNum(min, max);
+            int guess = 0;
+            int attempts = 0;
+            while (guess != answer && attempts < tries) {
+                System.out.printf("Guess a number between %d and %d You have %d attempts left.%n", min, max, tries - attempts);
+                guess = sc.nextInt();
+                System.out.println(littleGame(guess, answer));
+                attempts++;
+            }
             if (attempts == tries && guess != answer) {
                 System.out.println("The magic number was: " + answer + ". You have ran out of guesses...");
             } else {
