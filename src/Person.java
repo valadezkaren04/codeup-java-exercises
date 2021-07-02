@@ -46,13 +46,5 @@ public class Person {
 //        System.out.println(person1 == person2); // true ; the comparison is made on objects that are the exact same
 
 
-        Person person1 = new Person("John");
-        Person person2 = person1; //person 2 is person 1
-        System.out.println(person1.getName()); // John
-        System.out.println(person2.getName()); // John ; person 2 is equal to person 1
-        person2.setName("Jane");
-        System.out.println(person1.getName()); // Jane
-        System.out.println(person2.getName()); // Jane ; changing the name also impacts person 1's name (same object)
-    }
 }
 
