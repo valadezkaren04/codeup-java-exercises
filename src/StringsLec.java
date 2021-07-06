@@ -27,11 +27,7 @@ public class StringsLec {
         int locationOfAInK = kn.indexOf("a");
         System.out.println("The location of 'a' in the string of \"nk\" is: " + locationOfAInK); // 5
 
-        String hiDad = "Hello, Father";
-        String father = hiDad.substring(7, 13); //Father
-        System.out.println(father);
-        hiDad = hiDad.replace(father, kn);
-        System.out.println(hiDad); //Hello, Kim Namjoon
+
 
         String hasWhiteSpace = "      a lot of white space";
         System.out.println(hasWhiteSpace.trim()); //a lot of white space (no w.s)
