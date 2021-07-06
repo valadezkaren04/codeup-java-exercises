@@ -19,9 +19,7 @@ public class StringsLec {
         String firstLetterKaren = "" + karen.charAt(0);
         System.out.println("Does Karen and Kim Namjoon start with the same letter?: " + kn.startsWith(firstLetterKaren));
 
-        String coolCats = "Cool Cats are cool, and we like it like that";
-        System.out.println(coolCats.startsWith("Cool Cats"));
-        System.out.println(coolCats.endsWith("."));
+
 
         // Manipulation
         int locationOfAInK = kn.indexOf("a");
