@@ -39,7 +39,8 @@ public class StringsLec {
 
 
         //Rabbit Hole (works!)
-
+        String makeMeWork = "\"%s\" totally works in a souf";
+        System.out.printf(makeMeWork, kn);
 
     }
 }
