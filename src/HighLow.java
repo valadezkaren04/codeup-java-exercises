@@ -70,7 +70,10 @@ import java.util.Scanner;
                 if (difficulty.equalsIgnoreCase("easy")) {
                     System.out.println("You've selected: EASY");
                     break;
-                }
+                } else if (difficulty.equalsIgnoreCase("normal") || difficulty.equalsIgnoreCase("medium")) {
+                    System.out.println("You've selected: NORMAL");
+                    tries -= 10;
+                    break;
                 } else if (difficulty.equalsIgnoreCase("hard")) {
                     System.out.println("You've selected: HARD");
                     tries -= 20;
