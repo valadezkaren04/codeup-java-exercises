@@ -50,7 +50,17 @@ import java.util.Scanner;
             }
         }
 
-
+        public static void littleGame() {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Welcome to Higher or Lower!");
+            System.out.println("Please enter a minimum value.");
+            int min = MethodsExercises.getInteger(0, 300);
+            System.out.printf("You entered: %d.%n", min);
+            System.out.println("Please enter a maximum value.");
+            int max = MethodsExercises.getInteger(min + 1, min + 300);
+            System.out.printf("You entered: %d.%n", max);
+            int tries = 25;
+            while (true) {
                 System.out.println("Please select your difficulty:");
                 System.out.println("EASY: 25 attempts to guess the correct number.");
                 System.out.println("NORMAL: 15 attempts to guess the correct number.");
