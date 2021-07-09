@@ -27,12 +27,6 @@ public class SuperHero extends Person {
         this.age = age;
     }
 
-    public static void main(String[] args) {
-        SuperHero sb = new SuperHero("Dale", "Denverson", "The Shining Boy", 17);
-        Person jim = new SuperHero("Jim", "James", "Super Jim", 54);
 
-        System.out.println(sb.getName());
-        System.out.println(jim.getName());
-    }
 }
 
