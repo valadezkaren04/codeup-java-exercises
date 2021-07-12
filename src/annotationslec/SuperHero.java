@@ -1,15 +1,7 @@
 package annotationslec;
 
 public class SuperHero extends Person {
-    private String publicPersona;
 
-    private int age;
-
-    public SuperHero(String firstName, String lastName, String publicPersona, int age) {
-        super(firstName, lastName);
-        this.publicPersona = publicPersona;
-        this.age = age;
-    }
 
     public String getName() {
         return publicPersona;
