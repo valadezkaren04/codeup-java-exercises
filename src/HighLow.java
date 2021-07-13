@@ -86,14 +86,7 @@ import java.util.Scanner;
                     System.out.println("Invalid selection: Try Again.");
                 }
             }
-            littleGame(min, max, tries);
-            String answer;
-            System.out.println("Play again?");
-            answer = sc.nextLine();
-            while (!answer.equalsIgnoreCase("No") && !answer.equalsIgnoreCase("Yes")) {
-                System.out.println("Please enter valid answer.");
-                System.out.println("Play again?");
-                answer = sc.nextLine();
+
             }
             if (answer.equalsIgnoreCase("Yes")) {
                 System.out.println("Preparing game...");
