@@ -61,7 +61,11 @@ import java.util.Scanner;
             System.out.printf("You entered: %d.%n", max);
             int tries = 25;
             while (true) {
-
+                System.out.println("Please select your difficulty:");
+                System.out.println("EASY: 25 attempts to guess the correct number.");
+                System.out.println("NORMAL: 15 attempts to guess the correct number.");
+                System.out.println("HARD: 5 attempts to guess the correct number.");
+                System.out.println("HOT SHOT: 1 attempt to guess the correct number.");
                 String difficulty = sc.nextLine();
                 if (difficulty.equalsIgnoreCase("easy")) {
                     System.out.println("You've selected: EASY");
