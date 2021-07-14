@@ -22,15 +22,7 @@ import java.util.Scanner;
             return (int) Math.floor(Math.random() * ((max) - min) + min);
         }
 
-        public static String littleGame(int guess, int answer) {
-            if (guess > answer) {
-                return "LOWER";
-            } else if (guess < answer) {
-                return "HIGHER";
-            } else {
-                return "YOU GOT IT!";
-            }
-        }
+
 
         public static void littleGame(int min, int max, int tries) {
             Scanner sc = new Scanner(System.in);
