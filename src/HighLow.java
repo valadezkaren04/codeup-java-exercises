@@ -95,11 +95,6 @@ import java.util.Scanner;
                 System.out.println("Play again?");
                 answer = sc.nextLine();
             }
-            if (answer.equalsIgnoreCase("Yes")) {
-                System.out.println("Preparing game...");
-                littleGame();
-            } else {
-                System.out.println("Program closed by user.");
-            }
+
         }
 }
