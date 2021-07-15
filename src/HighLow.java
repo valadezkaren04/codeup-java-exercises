@@ -13,14 +13,7 @@ import java.util.Scanner;
 //    Use the random method of the java.lang.Math class to generate a random number.
 
 
-    public class HighLow {
-        public static void main(String[] args) {
-            littleGame();
-        }
 
-        public static int magicNum(int min, int max) {
-            return (int) Math.floor(Math.random() * ((max) - min) + min);
-        }
 
         public static String littleGame(int guess, int answer) {
             if (guess > answer) {
