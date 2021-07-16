@@ -1,7 +1,7 @@
 public class ProblemSolved {
     public static void swapStrings(String [] a, String [] b) {
-        String[] a = {"apple", "banana", "pear"};
-        String[] b = {"bob", "sue", "lou"};
+         a = new String[]{"apple", "banana", "pear"};
+         b = new String[]{"bob", "sue", "lou"};
 
         for (int i = 0; i < a.length; i++) {
             String swap = a[i]; // takes value of bob (index of 0)
