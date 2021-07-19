@@ -7,6 +7,7 @@ public class ProblemSolved {
             String swap = a[i]; // takes value of bob (index of 0)
             a[i] = b[i]; // a = {"apple", "sue", "lou"};
             b[i] = swap ; // b = {"bob", "banana", "pear"};
+            
 
         }
     }
