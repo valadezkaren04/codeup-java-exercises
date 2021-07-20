@@ -11,7 +11,9 @@ public class SuperHero extends Person {
         this.age = age;
     }
 
-
+    public String getName() {
+        return publicPersona;
+    }
 
     public int getAge() {
         return age;
