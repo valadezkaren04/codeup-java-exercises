@@ -15,6 +15,7 @@ import java.util.Arrays;
 
 //    expected worst-case time complexity is O(N); expected worst-case space complexity is O(N) (not counting the storage required for input arguments).
 
+// this code works ; tested
 public class CodilitySmallestInt {
     public int solution(int[] arr) {
         int smallestInt = 1;
