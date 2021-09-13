@@ -14,7 +14,7 @@ import java.util.Arrays;
 //    N is an integer within the range [1..100,000]; each element of array A is an integer within the range [−1,000,000..1,000,000]. Complexity:
 
 //    expected worst-case time complexity is O(N); expected worst-case space complexity is O(N) (not counting the storage required for input arguments).
-public class Codility {
+public class CodilitySmallestInt {
     public int solution(int[] arr) {
         int smallestInt = 1;
 
