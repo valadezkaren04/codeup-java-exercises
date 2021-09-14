@@ -1,3 +1,7 @@
+//write a function:class solution { public string solution(string s); }
+// that, given a string s representing a phone number,
+// returns this phone number formatted as described above
+
 public class CodilityNumbers {
     public String solution(String phoneNumber) {
         phoneNumber = removeNonDigits(phoneNumber);
