@@ -12,5 +12,9 @@ public class HelloWorldPartTwo {
 
         aString = "now this is the string";
         System.out.println(aString);
+
+        // but a string cannot be reassigned to a number
+
+        // aString = 3.14159; // it is incompatible
     }
 }
