@@ -4,5 +4,13 @@ public class HelloWorldPartTwo {
 
         int myFavNum = 14;
         System.out.println(myFavNum);
+
+        String aString = "Hello beautiful people";
+        System.out.println(aString);
+
+        // string can be changed to something else ; reassigned
+
+        aString = "now this is the string";
+        System.out.println(aString);
     }
 }
