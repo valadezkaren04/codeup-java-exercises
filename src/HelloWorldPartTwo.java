@@ -29,12 +29,6 @@ public class HelloWorldPartTwo {
         theNum = (int) changingTheNum;
         System.out.println(theNum); // 3
 
-        // String theNumberThree = "three";
-        // Object o = theNumberThree;
-        // int three = (int) o;
-
-        // int three = (int) "three";
-
         // int x = 5;
         // System.out.println(x++); // prints out 5
         // System.out.println(x); // 6
@@ -44,6 +38,12 @@ public class HelloWorldPartTwo {
         // System.out.println(x); // 6
 
         // var class; // cannot be resolved
+
+        // String theNumberThree = "three";
+        // Object o = theNumberThree;
+        // int three = (int) o; // error
+
+        // int three = (int) "three"; // error
 
         int x = 4;
         x = x + 5;
