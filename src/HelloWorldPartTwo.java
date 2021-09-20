@@ -18,5 +18,10 @@ public class HelloWorldPartTwo {
         // aString = 3.14159; // it is incompatible
 
         // long theNum = 3.14; // needs to be casted
+
+        long theNum = 123L;
+        System.out.println(theNum);
+        theNum = 123;
+        System.out.println(theNum);
     }
 }
