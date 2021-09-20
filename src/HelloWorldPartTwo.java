@@ -16,5 +16,7 @@ public class HelloWorldPartTwo {
         // but a string cannot be reassigned to a number
 
         // aString = 3.14159; // it is incompatible
+
+        // long theNum = 3.14; // needs to be casted
     }
 }
