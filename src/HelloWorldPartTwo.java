@@ -28,5 +28,7 @@ public class HelloWorldPartTwo {
         String theNumberThree = "three";
         Object o = theNumberThree;
         int three = (int) o;
+
+        // int three = (int) "three";
     }
 }
