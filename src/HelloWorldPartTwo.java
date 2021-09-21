@@ -21,7 +21,12 @@ public class HelloWorldPartTwo {
 
         long theNum = 123L;
         System.out.println(theNum);
+
         theNum = 123;
         System.out.println(theNum);
+
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+        int three = (int) o;
     }
 }
