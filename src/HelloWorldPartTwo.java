@@ -19,15 +19,21 @@ public class HelloWorldPartTwo {
 
         // long theNum = 3.14; // needs to be casted
 
-        long theNum = 123L;
-        System.out.println(theNum);
+        // long theNum = 123L;
+        // System.out.println(theNum); // 123
 
-        theNum = 123;
-        System.out.println(theNum);
+        long theNum = 123;
+        System.out.println(theNum); // 123
 
-        String theNumberThree = "three";
-        Object o = theNumberThree;
-        int three = (int) o;
+        float changingTheNum = 3.14F;
+        theNum = (int) changingTheNum;
+        System.out.println(theNum); // 3
+
+        // String theNumberThree = "three";
+        // Object o = theNumberThree;
+        // int three = (int) o;
+
+        // int three = (int) "three";
 
         // int three = (int) "three";
     }
