@@ -35,6 +35,13 @@ public class HelloWorldPartTwo {
 
         // int three = (int) "three";
 
-        // int three = (int) "three";
+        // int x = 5;
+        // System.out.println(x++); // prints out 5
+        // System.out.println(x); // 6
+
+        int x = 4;
+        x = x + 5;
+
+
     }
 }
