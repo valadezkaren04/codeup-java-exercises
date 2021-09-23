@@ -43,6 +43,8 @@ public class HelloWorldPartTwo {
         // System.out.println(++x); // 6
         // System.out.println(x); // 6
 
+        // var class; // cannot be resolved
+
         int x = 4;
         x = x + 5;
 
