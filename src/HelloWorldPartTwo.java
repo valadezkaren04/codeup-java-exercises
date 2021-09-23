@@ -40,8 +40,8 @@ public class HelloWorldPartTwo {
         // System.out.println(x); // 6
 
         // int x = 5;
-        System.out.println(++x); // 6
-        System.out.println(x); // 6
+        // System.out.println(++x); // 6
+        // System.out.println(x); // 6
 
         int x = 4;
         x = x + 5;
