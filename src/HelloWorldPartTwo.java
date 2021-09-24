@@ -48,9 +48,9 @@ public class HelloWorldPartTwo {
         // int x = 4;
         // x = x + 5;
 
-        int x = 3;
-        int y = 4;
-        y = y * x;
+        // int x = 3;
+        // int y = 4;
+        // y = y * x;
 
         int x = 10;
         int y = 2;
