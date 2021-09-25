@@ -60,5 +60,11 @@ public class HelloWorldPartTwo {
 
         String name = "karen";
         System.out.printf("Hello there, %s. Nice to see you.\n", name); // Hello there, karen. Nice to see you.
+
+        String greeting = "Hello from";
+        String company = "Purps";
+        System.out.printf("%s, %s!", greeting, company); // Hello from, Purps!
+
+
     }
 }
