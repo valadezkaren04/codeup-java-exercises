@@ -58,5 +58,7 @@ public class HelloWorldPartTwo {
         y = y - x;
 
 
+        String name = "karen";
+        System.out.printf("Hello there, %s. Nice to see you.\n", name); // Hello there, karen. Nice to see you.
     }
 }
