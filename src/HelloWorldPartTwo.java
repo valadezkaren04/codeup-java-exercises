@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HelloWorldPartTwo {
     public static void main(String[] args) {
         System.out.println("Hello World! I'm practicing Java");
@@ -64,6 +66,13 @@ public class HelloWorldPartTwo {
         String greeting = "Hello from";
         String company = "Purps";
         System.out.printf("%s, %s!", greeting, company); // Hello from, Purps!
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter something: I love the color purple");
+        String userInput = scanner.next();
+
+        System.out.println("You entered: --> \"" + userInput + "\" <--"); //
 
 
     }
