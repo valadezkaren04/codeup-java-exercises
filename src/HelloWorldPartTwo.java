@@ -65,12 +65,13 @@ public class HelloWorldPartTwo {
 
         String greeting = "Hello from";
         String company = "Purps";
-        System.out.printf("%s, %s!", greeting, company); // Hello from, Purps!
+        System.out.printf("%s, %s! %n", greeting, company); // Hello from, Purps!
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter something: I love the color purple");
-        String userInput = scanner.next();
+        System.out.print("Enter something:"); // need to enter something in the console
+        //String userInput = scanner.next();
+        String userInput = scanner.nextLine(); // gives you the next line after
 
         System.out.println("You entered: --> \"" + userInput + "\" <--"); //
 
