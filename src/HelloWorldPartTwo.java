@@ -75,5 +75,12 @@ public class HelloWorldPartTwo {
 
         System.out.println("You entered: --> \"" + userInput + "\" <--"); //
 
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("please enter 4 words");
+
+        String userResp = scanner.nextLine();
+        System.out.println("Your first word is: ");
+
+
     }
 }
