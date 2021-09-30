@@ -77,9 +77,17 @@ public class HelloWorldPartTwo {
 
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("please enter 4 words");
+        System.out.println("Your first word: ");
+        String first = scanner.nextLine();
+        System.out.println("Your second word:");
+        String second = scanner.nextLine();
+        System.out.println("Your third word:");
+        String third = scanner.nextLine();
+        System.out.println("Your fourth word:");
+        String fourth = scanner.nextLine();
 
-        String userResp = scanner.nextLine();
-        System.out.println("Your first word is: ");
+        System.out.println("%s%n%s%n%s");
+
 
 
     }
