@@ -86,7 +86,7 @@ public class HelloWorldPartTwo {
         System.out.println("Your fourth word:");
         String fourth = scanner.nextLine();
 
-        System.out.println("%s%n%s%n%s");
+        System.out.printf("%s%n%s%n%s%n%s", first, second, third, fourth);
 
 
 
