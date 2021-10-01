@@ -125,6 +125,10 @@ public class HelloWorldPartTwo {
        // if (isAdmin || isAuthor) { // user is an admin *or* user is the author
             // edit the content
 
+        // if (!loggedIn) { // user is *not* logged in
+        //    // redirect to login page
+        //}
+
         //
         }
 
