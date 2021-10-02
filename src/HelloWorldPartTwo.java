@@ -129,10 +129,12 @@ public class HelloWorldPartTwo {
         //    // redirect to login page
         //}
 
-        //
+        // // Determine if the input submitted from a site registration form is valid
+        //boolean inputHasErrors = username.isEmpty()
+        //    || email.isEmpty()
+        //    || password.isEmpty()
+        //    || (! password.equals(passwordConfirmation));
+
+
         }
-
-
     }
-
-}
