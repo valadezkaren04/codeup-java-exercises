@@ -89,6 +89,12 @@ public class HelloWorldPartTwo {
         System.out.printf("%s%n%s%n%s%n%s", first, second, third, fourth);
 
 
+        System.out.println("please enter a complete sentence...");
+        scanner.nextLine();
+        String sentence = scanner.nextLine();
+        System.out.println("Your sentence was: " + sentence);
+
+
 
     }
 }
