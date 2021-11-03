@@ -96,6 +96,11 @@ public class HelloWorldPartTwo {
         System.out.println("Your sentence was: " + sentence);
 
         // using some math
+        System.out.println("\nWHat is the width of your living room?\n");
+        int width = Integer.parseInt(scanner.nextLine());
+        System.out.println("What is the length of your living room?\n");
+        int length = Integer.parseInt(scanner.nextLine());
+
 
 
 
