@@ -101,6 +101,7 @@ public class HelloWorldPartTwo {
         System.out.println("What is the length of your living room?\n");
         int length = Integer.parseInt(scanner.nextLine());
         System.out.printf("The are of the living room is: %d%n", length * width);
+        System.out.printf("The perimeter of the living room is: %d%n", (length * 2) * (width * 2));
 
 
 
