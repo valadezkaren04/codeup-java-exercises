@@ -103,6 +103,22 @@ public class HelloWorldPartTwo {
         System.out.printf("The are of the living room is: %d%n", length * width);
         System.out.printf("The perimeter of the living room is: %d%n", (length * 2) * (width * 2));
 
+        // boolean expressions
+        //discountPercent == 2.3       // equal to a numeric literal
+        //letter == 'y'                // equal to a char literal
+        //isValid == false             // equal to the false value
+
+        //subtotal != 0                // not equal to a numeric literal
+        //loggedInUser != accountOwner // not equal to a variable
+
+        //years > 0                    // greater than a numeric literal
+        //i < months                   // less than a variable
+
+        //subtotal >= 500              // greater than or equal to a numeric literal
+        //quantity <= reorderPoint     // less than or equal to a variable
+
+
+
 
 
 
