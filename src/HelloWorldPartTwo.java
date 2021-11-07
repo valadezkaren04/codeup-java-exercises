@@ -117,13 +117,11 @@ public class HelloWorldPartTwo {
         //subtotal >= 500              // greater than or equal to a numeric literal
         //quantity <= reorderPoint     // less than or equal to a variable
 
-
-
-
-
-
-
+        // logical operators
+        //if (isLoggedIn && isAdmin) { // user is logged in *and* is an admin
+        // show the admin panel
 
 
     }
+
 }
