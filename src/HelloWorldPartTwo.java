@@ -118,8 +118,15 @@ public class HelloWorldPartTwo {
         //quantity <= reorderPoint     // less than or equal to a variable
 
         // logical operators
+
         //if (isLoggedIn && isAdmin) { // user is logged in *and* is an admin
         // show the admin panel
+
+       // if (isAdmin || isAuthor) { // user is an admin *or* user is the author
+            // edit the content
+
+        //
+        }
 
 
     }
