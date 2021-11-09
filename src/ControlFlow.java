@@ -162,24 +162,53 @@ public class ControlFlow {
 
         // group code 99 cans of big red
 
-        for (int i = 99; i >= 0; i--) {
-            String word = "cans";
-            if (i ==1) {
-                System.out.println(i + " can of Big Red on the Wall.");
-                System.out.println(i + " can of Big Red on the Wall,");
-                System.out.println(i + " can of Big Red,");
-                System.out.println("Take one down, pass it around, ");
-            } else if (i == 0 ){
-                System.out.println("No more cans of Big Red on the Wall,");
-                System.out.println("No more cans of Big Red,");
-                System.out.println("You go to the store, and buy some more,");
-                System.out.println("99 cans of Big Red on the wall");
-            } else {
-                System.out.println(i + " cans of Big Red on the Wall.");
-                System.out.println(i + " cans of Big Red on the Wall,");
-                System.out.println(i + " cans of Big Red,");
-                System.out.println("Take one down, pass it around, ");
-            }
-        }
+//        for (int i = 99; i >= 0; i--) {
+//            String word = "cans";
+//            if (i ==1) {
+//                System.out.println(i + " can of Big Red on the Wall.");
+//                System.out.println(i + " can of Big Red on the Wall,");
+//                System.out.println(i + " can of Big Red,");
+//                System.out.println("Take one down, pass it around, ");
+//            } else if (i == 0 ){
+//                System.out.println("No more cans of Big Red on the Wall,");
+//                System.out.println("No more cans of Big Red,");
+//                System.out.println("You go to the store, and buy some more,");
+//                System.out.println("99 cans of Big Red on the wall");
+//            } else {
+//                System.out.println(i + " cans of Big Red on the Wall.");
+//                System.out.println(i + " cans of Big Red on the Wall,");
+//                System.out.println(i + " cans of Big Red,");
+//                System.out.println("Take one down, pass it around, ");
+//            }
+//        }
+
+
+//        int comp = 0;
+//        for (int i = 0; i <  11; i++) {
+//            if (i == 5) {
+//                comp -= i;
+//            }
+//            comp += i;
+//        }
+
+//        int comp = 0;
+//        for (int i = 0; i <  11; i++) {
+//            if (i == 5) {
+//                continue;
+//            }
+//            comp += i;
+//        }
+//
+//       System.out.println(comp);
+
+//        for (int i =0; i < 1; i++) {
+//            System.out.println(i); // 0
+//        }
+
+//        String name = "John";
+//        String name1 = "John";
+//        if (name.equals(name1)) {
+//            // do code here
+//        }
     }
 }
